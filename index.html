@@ -3,54 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brightside — Start your day on the bright side.</title>
-  <meta name="description" content="One uplifting news story, every day. Brightside cuts through the noise and delivers a single piece of good news, beautifully." />
+  <title>Snickers Studio — Apps that add value to everyday life.</title>
+  <meta name="description" content="Snickers Studio builds thoughtful apps and services that add genuine value to everyday life." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="hero">
-    <div class="hero-content">
-      <div class="badge">🌅 Available on iOS</div>
-      <h1>Brightside</h1>
-      <p class="tagline">Start your day on the bright side.</p>
-      <p class="description">
-        One genuine, uplifting news story — every day. No doom scrolling,
-        no noise. Just something good that happened in the world.
-      </p>
-      <a href="#" class="app-store-btn" id="app-store-link">
-        <img src="app-store-badge.svg" alt="Download on the App Store" />
-      </a>
-    </div>
 
-    <div class="phone-wrap">
-      <img src="screenshot.png" alt="Brightside app screenshot" class="screenshot" />
+  <!-- Nav -->
+  <nav>
+    <a href="/" class="nav-logo">🐾 Snickers Studio</a>
+    <div class="nav-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero hero--compact">
+    <div class="hero-content">
+      <h1>Snickers Studio</h1>
+      <p class="tagline">Apps that add value to everyday life.</p>
+      <a href="#portfolio" class="cta-btn">See our work</a>
+    </div>
+    <div class="snickers-wrap">
+      <img src="snickers.svg" alt="Snickers the dog" class="snickers-img" />
     </div>
   </div>
 
-  <section class="features">
-    <div class="feature">
-      <span class="feature-icon">📰</span>
-      <h3>Real news, curated daily</h3>
-      <p>We search the web for a genuine positive story so you don't have to.</p>
-    </div>
-    <div class="feature">
-      <span class="feature-icon">🎨</span>
-      <h3>A new illustration every day</h3>
-      <p>Each story comes with a charming illustration, unique to that day.</p>
-    </div>
-    <div class="feature">
-      <span class="feature-icon">😊</span>
-      <h3>React & share</h3>
-      <p>React with emoji and share stories that made you smile with the people you love.</p>
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="portfolio-grid">
+      <a href="brightside.html" class="portfolio-card">
+        <div class="portfolio-card-icon">🌅</div>
+        <div class="portfolio-card-body">
+          <h3>Brightside</h3>
+          <p>A daily dose of good news. One uplifting story, beautifully illustrated, delivered every day.</p>
+          <span class="portfolio-tag">iOS</span>
+        </div>
+      </a>
     </div>
   </section>
 
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2 class="section-title">About us</h2>
+      <p>
+        Snickers Studio was founded in honor of our founder's beloved dog, Snickers — a scrappy, joyful companion who made every day a little brighter just by being in it.
+      </p>
+      <p>
+        In his memory, we build apps and services that add genuine value to everyday life. Nothing bloated, nothing noisy — just thoughtful tools that make mornings better, routines smoother, and the world feel a little more human.
+      </p>
+      <p class="about-tagline">🐾 Small studio. Big heart.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>Made with ☀️ by <a href="https://snickers.studio">Snickers Studio LLC</a></p>
-    <a href="privacy.html">Privacy Policy</a>
+    <p>© 2026 Snickers Studio LLC</p>
+    <a href="mailto:paul@snickers.studio">paul@snickers.studio</a>
   </footer>
+
 </body>
 </html>

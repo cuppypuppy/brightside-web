@@ -25,7 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 64px;
-  padding: 80px 40px;
+  padding: 120px 40px 80px;
   background: linear-gradient(135deg, var(--pastel-start), var(--pastel-end));
   flex-wrap: wrap;
 }
@@ -77,6 +77,21 @@ h1 {
 
 .app-store-btn:hover img { opacity: 0.8; }
 
+.cta-btn {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--text-dark);
+  padding: 14px 28px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  width: fit-content;
+}
+
+.cta-btn:hover { opacity: 0.8; }
+
 /* ── Phone screenshot ── */
 .phone-wrap {
   flex-shrink: 0;
@@ -85,6 +100,48 @@ h1 {
 .screenshot {
   width: clamp(220px, 30vw, 300px);
 }
+
+.hero-content {
+  max-width: 640px;
+}
+
+/* ── Nav ── */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.nav-logo {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-mid);
+  text-decoration: none;
+}
+
+.nav-links a:hover { color: var(--text-dark); }
 
 /* ── Features ── */
 .features {
@@ -116,6 +173,135 @@ h1 {
   font-size: 15px;
   line-height: 1.6;
   color: var(--text-mid);
+}
+
+.hero--compact {
+  min-height: 0;
+  padding: 100px 40px 0;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+
+.hero--compact .hero-content {
+  padding-bottom: 60px;
+}
+
+.snickers-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.snickers-img {
+  width: clamp(160px, 20vw, 260px);
+  display: block;
+  /* Crop top of image so only the top portion (head peeking up) shows */
+  margin-bottom: -2px;
+}
+
+/* ── Section title ── */
+.section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+/* ── Portfolio ── */
+.portfolio {
+  padding: 100px 40px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.portfolio-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  padding: 28px;
+  max-width: 380px;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.portfolio-card-icon {
+  font-size: 36px;
+  flex-shrink: 0;
+}
+
+.portfolio-card-body h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.portfolio-card-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-mid);
+  margin-bottom: 12px;
+}
+
+.portfolio-tag {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+  background: #f0f0f0;
+  padding: 3px 8px;
+  border-radius: 100px;
+}
+
+/* ── About ── */
+.about {
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--pastel-start), var(--pastel-end));
+}
+
+.about-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-mid);
+}
+
+.about-tagline {
+  font-size: 18px !important;
+  font-weight: 600;
+  color: var(--text-dark) !important;
 }
 
 /* ── Footer ── */
