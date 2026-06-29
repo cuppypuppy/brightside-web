@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "54DQG4VB8D.studio.snickers.Brightside",
-        "paths": ["/post/*"]
+        "paths": ["/brightside.html", "/post/*"]
       }
     ]
   }
