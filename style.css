@@ -343,4 +343,16 @@ footer a:hover { color: var(--text-dark); }
     align-items: center;
     text-align: center;
   }
+
+  .hero--compact {
+    padding: 80px 24px 0;
+  }
+
+  .hero--compact .hero-content {
+    padding-bottom: 32px;
+  }
+
+  .snickers-wrap {
+    align-self: center;
+  }
 }
